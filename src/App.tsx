@@ -1,7 +1,12 @@
+import { Unit } from './StyledComponents'
+import TestUseContext from './TestUseContext'
+
 export default function App() {
   return (
     <>
-      <h1>Init</h1>
+      <Unit>
+        <TestUseContext />
+      </Unit>
     </>
   )
 }
