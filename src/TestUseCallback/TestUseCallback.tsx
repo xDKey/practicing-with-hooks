@@ -34,10 +34,11 @@ const TodoItem = ({ id }: { id: number }) => {
     getTodo().then((fetchedTodo) => setTodo(fetchedTodo))
   }, [getTodo])
 
+  const textDecoration = todo?.completed ? 'line-through' : 'none'
+
   return (
     <Styledtodo>
-      <input type='checkbox' checked={todo?.completed} />
-      {todo && <p>{todo.title}</p>}
+      {todo && <p style={{ textDecoration }}>{todo.title}</p>}
     </Styledtodo>
   )
 }
