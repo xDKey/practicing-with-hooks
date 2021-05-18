@@ -1,6 +1,7 @@
 import { Unit } from './StyledComponents'
 import TestUseCallback from './TestUseCallback/TestUseCallback'
 import TestUseContext from './TestUseContext/TestUseContext'
+import TestUseImperativeHandle from './TestUseImperativeHandle/TestUseImperativeHandle'
 import TestUseReducer from './TestUseReducer/TestUseReducer'
 
 export default function App() {
@@ -11,9 +12,12 @@ export default function App() {
       </Unit>
       <Unit>
         <TestUseReducer />
-      </Unit>      
+      </Unit>
       <Unit>
         <TestUseCallback />
+      </Unit>
+      <Unit>
+        <TestUseImperativeHandle />
       </Unit>
     </>
   )
