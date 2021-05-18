@@ -2,6 +2,7 @@ import { Unit } from './StyledComponents'
 import TestUseCallback from './TestUseCallback/TestUseCallback'
 import TestUseContext from './TestUseContext/TestUseContext'
 import TestUseImperativeHandle from './TestUseImperativeHandle/TestUseImperativeHandle'
+import TestUseLayoutEffect from './TestUseLayoutEffect/TestUseLayoutEffect'
 import TestUseReducer from './TestUseReducer/TestUseReducer'
 
 export default function App() {
@@ -18,6 +19,9 @@ export default function App() {
       </Unit>
       <Unit>
         <TestUseImperativeHandle />
+      </Unit>
+      <Unit>
+        <TestUseLayoutEffect />
       </Unit>
     </>
   )
